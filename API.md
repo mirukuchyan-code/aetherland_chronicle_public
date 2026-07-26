@@ -28,6 +28,14 @@ https://aetherland-chronicle.onrender.com/mcp
 
 状态中的 `choices` 会列出当前地图、地点、人物、任务、商品、委托和配方，无需猜测内部 ID。
 
+与地区探索有关的公开状态：
+
+- `location.region_inspiration`：当前楼层的地区与生活气质。
+- `location.staple_food`：当地主要食材。
+- `choices.shops[].stock`：商品用途、类别、价格及 `floor_exclusive` 楼层限定标记。
+- `active_buffs`：料理、饮品与补给的剩余生效时间。
+- `cookbook`：《天穹塔食谱册》分层进度、已品尝料理与地区称号；未解锁菜名保持隐藏。
+
 ## aetherland_act
 
 执行一个行动并自动保存。
@@ -74,3 +82,5 @@ choice = 对应编号
 ```
 
 隐藏事件概率、完整事件池、掉落表、成就条件、Boss 条件和未来转职条件不会通过 MCP 返回。
+
+地方料理在 `use_item` 后登记。首次品尝即使生命和体力已满也可以正常记录；重复食用则需要料理仍能恢复状态或刷新有效增益。
