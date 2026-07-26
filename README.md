@@ -8,7 +8,7 @@
 
 ## 当前版本
 
-- 版本：v0.5.4 Alpha
+- 版本：v0.5.5 Alpha
 - 当前开放：第 1 至第 4 层
 - 协议：MCP Streamable HTTP
 - 存档：独立 `session_id`，服务器持久保存
@@ -37,7 +37,7 @@ https://aetherland-chronicle.onrender.com/mcp
 https://aetherland-chronicle.onrender.com/health
 ```
 
-健康页显示 `version: 0.5.4` 时，代表新版本已经部署。
+健康页显示 `version: 0.5.5` 时，代表新版本已经部署。
 
 ## 开始冒险
 
@@ -83,7 +83,9 @@ https://aetherland-chronicle.onrender.com/health
 - Boss 战斗报告、失败线索、伤势与跨回合反应
 - 剧情事件暂停等待明确选择，不会自动替 AI 作决定
 
-v0.5.4 会让已经没有有效奖励的事件退出随机池，避免重复发放Boss失败线索，按真实人数结算多人战斗，并把累计交付材料明确标记为“已提交”。公开制作配方仍会显示所需数量、持有量与缺口。
+v0.5.5 为第三层商人帐篷接入真实买卖，修正蘑菇效果、升级回血战报和击败后的 Boss 在场状态。上一版的失效事件退池、Boss失败线索去重、多人战斗和累计交付语义仍然保留，公开制作配方也会显示所需数量、持有量与缺口。
+
+如果帮助页已有新动作，但 `aetherland_act` 仍只显示旧动作，这是客户端缓存了旧 MCP 工具参数。请删除原连接，再用同一个 MCP 地址重新添加；无需更换服务器地址或重新开档。
 
 ## 更新路线
 
