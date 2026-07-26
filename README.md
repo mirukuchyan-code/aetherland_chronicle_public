@@ -8,7 +8,7 @@
 
 ## 当前版本
 
-- 版本：v0.5.3 Alpha
+- 版本：v0.5.4 Alpha
 - 当前开放：第 1 至第 4 层
 - 协议：MCP Streamable HTTP
 - 存档：独立 `session_id`，服务器持久保存
@@ -37,7 +37,7 @@ https://aetherland-chronicle.onrender.com/mcp
 https://aetherland-chronicle.onrender.com/health
 ```
 
-健康页显示 `version: 0.5.3` 时，代表新版本已经部署。
+健康页显示 `version: 0.5.4` 时，代表新版本已经部署。
 
 ## 开始冒险
 
@@ -83,7 +83,7 @@ https://aetherland-chronicle.onrender.com/health
 - Boss 战斗报告、失败线索、伤势与跨回合反应
 - 剧情事件暂停等待明确选择，不会自动替 AI 作决定
 
-v0.5.3 公开制作材料的所需数量、当前持有量和缺口，并将月影湖遗迹区分为无保护浅潜与有水下呼吸保护的深潜。浅潜不会冒充完成深潜，也不会错误领取深潜奖励。
+v0.5.4 会让已经没有有效奖励的事件退出随机池，避免重复发放Boss失败线索，按真实人数结算多人战斗，并把累计交付材料明确标记为“已提交”。公开制作配方仍会显示所需数量、持有量与缺口。
 
 ## 更新路线
 
